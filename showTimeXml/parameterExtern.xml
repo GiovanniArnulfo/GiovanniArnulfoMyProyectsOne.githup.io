@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE KNOWLEDGE_SYSTEMS SYSTEM "knowledgeSistems.dtd"
+
+<KNOWLEDGE_SYSTEMS>
+  <LANGUAGE_MARKUP>
+      <NAME>Html</NAME>
+      <NAME>Xml</NAME>
+   </LANGUAGE_MARKUP>
+   <LANGUAGE_OF_PROGRAMATION>
+      <NAME>Jscript</NAME>
+      <NAME>java</NAME>
+   </LANGUAGE_OF_PROGRAMATION>
+</KNOWLEDGE_SYSTEMS>

@@ -1,0 +1,124 @@
+<?xml  version="1.0" encoding="utf-8" standalone="no" ?>
+<!DOCTYPE VOTTIN_COLOMBIA[
+
+<!ENTITY GP "Gustavo Petro">
+<!ENTITY RH "  &QM; Rodolfo Hernandez  &QM;  ">
+<!--The element  ENTITY RH has nested a ENTITY QM comillas-->
+<!ENTITY GT " &#62; ">
+<!ENTITY QM " &#34; ">
+
+<!ENTITY M "Monday time 5:45 am &RH; ">
+<!--In theory this ENTITY M has three ENTITY referenfe M, RH and QM-->
+<!--The element CANDIDATE_NAME has an Internal General Entity reference. Dont forget in the reference typing the letter Y and the signe SEMI COLON -->
+<!--The element SIGNATURE has an Internal General Entity reference. -->
+
+
+<!ELEMENT VOTTIN_COLOMBIA (CANDIDATE+, SIGNATURE, RESULT_FINE, ELECTION_BROAD_MINISTER, SIGN)>
+<!ELEMENT CANDIDATE (CANDIDATE_NAME, TO_BEARN, AGE, VOTES_BY_CITY)>
+<!ELEMENT CANDIDATE_NAME (#PCDATA)>
+<!ELEMENT TO_BEARN (#PCDATA)>
+<!ELEMENT AGE (#PCDATA)>
+<!--The element SECOND_TURN has the signe of interrogation because appear only one time -->
+<!ELEMENT VOTES_BY_CITY (BOGOTA, MEDELLIN, CHOCO, TOTAL_VOTES, (SECOND_TURN*, NOT_SECOND_TURN*))+> 
+<!ELEMENT BOGOTA (#PCDATA)>
+<!ELEMENT MEDELLIN (#PCDATA)>
+<!ELEMENT CHOCO (#PCDATA)>
+<!ELEMENT TOTAL_VOTES (#PCDATA)>
+<!ELEMENT SECOND_TURN (#PCDATA)>
+<!ELEMENT NOT_SECOND_TURN EMPTY>
+
+<!-- The element TOTAL_VOTES has a entity belong of xml  numeral 241 represent the letter n with assent, that require be reference but not declared  -->
+
+<!ELEMENT SIGNATURE (LAST_MODIFIED)>
+<!ELEMENT LAST_MODIFIED (#PCDATA)>
+
+<!ELEMENT RESULT_FINE (SECOND_VOTING_PETRO, SECOND_VOTING_RODOLFO)>
+<!ELEMENT SECOND_VOTING_PETRO (#PCDATA)>
+<!ELEMENT SECOND_VOTING_RODOLFO (#PCDATA)>
+
+<!ENTITY RF SYSTEM  "votingColombiaII.xml" >
+<!--The element RESULT_FINE has an external General Entity reference said RF. -->
+<!-- Cifrado of document called certificado how know if a transation. Transaccion sure is a exchange of info encoding between web site and internet. EV certificados validacion extendida green color. a green address bar. we cand make click on the lock by iddentifie the identity of website. -->
+<!-- we cand make click on the lock by iddentifie the identity of website. Digital identifier or certificados from security with private clue. When link us to  website save, or truly, the website delibery its certifie toward internet for validation about its issue if was made by entity issue of certificados and  validity its deadline. -->
+<!-- Fishing, suplantation of entity in line made by users revele its personal data through electronic email. Software maltware, are programs tath  represent a risk for the security for have  a content unright. Smart screen is a filtro that proteting yuo about fishing and malware, his performance is in plane second  -->
+<!-- Tool of deletion  of software malware-->
+<!-- The element TOTAL_VOTES and NAME_TWO has the entity letter ene with bar upon -->
+
+<!ENTITY % PE SYSTEM "propertyBroadMinister.dtd" >
+%PE;
+<!-- This is a property extern with a chunk of dtd PB mean property external -->
+
+<!ENTITY % FLAVOR SYSTEM "igTwo.dtd" >
+%FLAVOR;
+
+<!-- With this label and that reference the dtd from its txt we can link two paper one xml and its dtd but are UNVALID -->
+<!--  To generate validity  is needed to incert the name element into the element root and declere element in its dtd -->
+] >
+
+<VOTTIN_COLOMBIA>
+<CANDIDATE>
+  <CANDIDATE_NAME> &GP; </CANDIDATE_NAME>
+  <TO_BEARN> &QM; Cesar &QM;  </TO_BEARN>
+  <AGE> &GP; 62</AGE>
+    <VOTES_BY_CITY> 
+       <BOGOTA>90</BOGOTA>
+       <MEDELLIN>70</MEDELLIN>
+       <CHOCO>95</CHOCO>
+       <TOTAL_VOTES>   &GT; 265</TOTAL_VOTES>
+       <SECOND_TURN>Yes</SECOND_TURN>
+    </VOTES_BY_CITY>
+</CANDIDATE>
+
+<CANDIDATE>  
+ <CANDIDATE_NAME> &RH; </CANDIDATE_NAME>
+ <TO_BEARN>Santander</TO_BEARN>
+  <AGE> &RH; 72</AGE>
+    <VOTES_BY_CITY> 
+       <BOGOTA>80</BOGOTA>
+       <MEDELLIN>60</MEDELLIN>
+       <CHOCO> 85</CHOCO>
+       <TOTAL_VOTES>225</TOTAL_VOTES>
+       <SECOND_TURN>Yes</SECOND_TURN>
+    </VOTES_BY_CITY>
+</CANDIDATE>
+
+<CANDIDATE>
+  <CANDIDATE_NAME>Federico Gutierrez</CANDIDATE_NAME>
+  <TO_BEARN>Medellin</TO_BEARN>
+  <AGE>64</AGE>
+  <VOTES_BY_CITY> 
+       <BOGOTA>30</BOGOTA>
+       <MEDELLIN>40</MEDELLIN>
+       <CHOCO>20</CHOCO>
+       <TOTAL_VOTES>90</TOTAL_VOTES>
+       <NOT_SECOND_TURN/>
+   </VOTES_BY_CITY>
+</CANDIDATE>
+
+<CANDIDATE>
+  <CANDIDATE_NAME>Sergio Fajardo</CANDIDATE_NAME>
+  <TO_BEARN>Quindio</TO_BEARN>
+  <AGE>66</AGE>
+  <VOTES_BY_CITY> 
+       <BOGOTA>10</BOGOTA>
+       <MEDELLIN>15</MEDELLIN>
+       <CHOCO>9</CHOCO>
+       <TOTAL_VOTES> &#241;  34</TOTAL_VOTES>
+       <NOT_SECOND_TURN/>
+   </VOTES_BY_CITY>
+</CANDIDATE>
+
+<SIGNATURE>
+  <LAST_MODIFIED> &M; </LAST_MODIFIED>
+</SIGNATURE>
+  &RF;
+<ELECTION_BROAD_MINISTER>
+   <WING_LEFT>
+       <NAME_ONE>Roy Barreras</NAME_ONE>
+   </WING_LEFT>
+   <WING_RIGHT>
+      <NAME_TWO>Alejandro Ordo&#241;es</NAME_TWO>
+   </WING_RIGHT>
+</ELECTION_BROAD_MINISTER>
+ &SIGN;
+</VOTTIN_COLOMBIA>

@@ -1,0 +1,6 @@
+<!ELEMENT Dictionary (English,Spanish)>
+<!ELEMENT English (word)>
+<!ELEMENT word (#PCDATA)>
+<!ELEMENT Spanish (words)>
+<!ELEMENT words (#PCDATA)>
+ 

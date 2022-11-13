@@ -1,0 +1,38 @@
+<?txt version="1.0" encoding="UTF-8"?>
+
+<!-- BY TAKE INTO MIND -->
+<!-- Is mandatory let a space between the name of elelment and the type -->
+<!-- Remember set the badge # along with the type -->
+<!-- By declarate element </> is need set the type EMPTY with out brachets -->
+<!-- By declarate type ANY without brace -->
+
+<!DOCTYPE Pays[
+<!ELEMENT Pays (country*)>
+<!ELEMENT country (name*,continent,langue*,extencion,gouvernment)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT continent ANY>
+<!ELEMENT langue (#PCDATA)>
+<!ELEMENT extencion (#PCDATA)>
+<!ELEMENT gouvernment EMPTY>
+]>
+
+<Pays>
+    <country>
+	<name>Colombia</name>
+	<name>Nueva Granada</name>
+    	<continent>Sud America</continent>
+    	<langue>Espanish</langue>
+	<langue>Muisca</langue>
+	<extencion>45000 mt</extencion> 
+	<gouvernment/>   
+    </country>	
+    <country>
+    	<name>Mexico</name>
+    	<name>Nueva España</name>
+                 <continent>Norte America</continent>
+                 <langue>Spanish</langue>
+                 <langue>Maya</langue>
+                 <extencion>60.000</extencion> 
+                 <gouvernment/>     
+    </country>
+</Pays>

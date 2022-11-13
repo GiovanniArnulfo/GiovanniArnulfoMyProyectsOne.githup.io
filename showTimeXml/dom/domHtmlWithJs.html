@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+<meta encoding="utf-8">
+<title> Xml Dom</title>
+
+<script>
+ var xmlText =    "<FOOD_ITEM TYPE= 'Colombian'>" + 
+                              "<NAME>YUCA </NAME>" +
+                              "<COST>OneHundred</COST>" +
+                           "</FOOD_ITEM>";
+ var parser      =  new DOMParser(); 
+ var xmlPaper =  parser.parseFromString(xmlText, "text/xml");
+ var value        =  xmlPaper.getElementsByTagName("FOOD_ITEM")[0].getAttribute("TYPE");
+ document.write(value); 
+                     
+
+
+</script>
+</head>
+<body>
+
+</body>
+
+</html>

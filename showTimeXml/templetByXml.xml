@@ -1,0 +1,27 @@
+/*
+signe for have into mind:
+comments:
+<!--abc-->
+Sequence: list of children separare by commes.
+ <!ELEMENT VOTTIN_COLOMBIA(CANDIDATE, CANDIDATE)>
++  One or more children:  1| +
+ <!ELEMENT VOTTIN_COLOMBIA(CANDIDATE+)>
+*  Zero or more children: 0|+
+? Zero or one child: 0|1
+Choice:
+
+ Templete:
+<VOTTIN_COLOMBIA>
+<CANDIDATE>  
+ <CANDIDATE_NAME> </CANDIDATE_NAME>
+ <TO_BEARN>  </TO_BEARN>
+  <AGE></AGE>
+    <VOTES_BY_CITY> 
+       <BOGOTA> </BOGOTA>
+       <MEDELLIN> </MEDELLIN>
+       <CHOCO> </CHOCO>
+       <TOTAL_VOTES> </TOTAL_VOTES>
+    </VOTES_BY_CITY>
+</CANDIDATE>
+</VOTTIN_COLOMBIA>
+*/

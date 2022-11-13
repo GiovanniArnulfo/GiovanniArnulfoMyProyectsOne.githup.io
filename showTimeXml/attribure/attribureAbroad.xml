@@ -1,0 +1,12 @@
+<?xml  version="1.0" encoding="utf-8" ?>  
+
+<WAR_BROTHER_COLOMBIAN SET = "c1.3"  CONFLICT_ELDER = "c1.0"  CONFLICT_HALF = "c1.2">
+    <!-- This tag have  an attribute  value ID and idref. What it main the two elements of sicle xx each
+    other have a relation with this element like siblies or family -->
+
+    <FIRST_WAR CITY= "SB"  STATE-WRAPPED= "CL VL EC PR" > Thousand Days </FIRST_WAR>
+    <!-- This tag have  an attribute  value nmtoken and nmtokens respectively -->
+
+    <TAG_PICTURE FIGURE= "chicken" />
+    <!-- This tag have  an attribute  that link a code-binary an Picture -->
+</WAR_BROTHER_COLOMBIAN>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<!DOCTYPE PRESIDENTS_TO_COLOMBIA SYSTEM "makingAttribure.dtd" >
+
+<PRESIDENTS_TO_COLOMBIA>
+<SIECLE_XIX VISIBLE = "FALSE" >
+   <WING_FEDERALIST STATE = "Venezuela" DATE_BORN = "1871"  > Simon B </WING_FEDERALIST>
+   <WING_UNIONIST STATE = "Colombia" DATE_BORN = "1881"> Francisco Santander </WING_UNIONIST> 
+   <WING_SINISTRA GIVEN_NAME = "There is not"  DATE_BORN = " 10 ' 1955 &apos;"  />
+</SIECLE_XIX>
+
+<SIECLE_XX LABEL = "GiovannisFamily" SET= "c1.0">
+   <WING_FEDERALIST > Laureano gomez </WING_FEDERALIST>
+<!-- In this element there is Two attributes an fixed and another defoult attribute
+       that we can only see   in the BROWSER  -->
+   <WING_UNIONIST STATE = "Colombia" DATE_BORN = "1881">Tomas C Mosquera </WING_UNIONIST> 
+   <WING_SINISTRA GIVEN_NAME ="Alfonso Lopez Pumarejo"   />
+<!-- In this element there is an Rquaire attribute GIVENname Petro 
+       and anImplied attribute by dateBorn where rend him to the user choice for incert or not the said attribute -->
+</SIECLE_XX>
+
+<SIECLE_XX  SET= "c1.2">
+<!-- Do not forgiven that ID value must begin in acordance with the rules xml name	
+       begin with letter or underscore-->
+   <WING_FEDERALIST  > Unrecognized   </WING_FEDERALIST  > 
+   <WING_UNIONIST> Unrecognized Two   </WING_UNIONIST>  
+   <WING_SINISTRA  GIVEN_NAME= "Petro" />
+</SIECLE_XX>
+
+&EPEX;
+<!-- This abrebiature mean entity parameter extention --> 
+
+<INSERT_WHITE_SPACE>
+  <WHITE_SPACE OPTION="one1"  space="preserve" > Here     you     will be able to make accaunt the white space 
+  </WHITE_SPACE>
+  <WHITE_SPACE OPTION="two2"   space="default" > Here you will be able to make accaunt the white space but by default
+  </WHITE_SPACE>
+</INSERT_WHITE_SPACE>
+
+</PRESIDENTS_TO_COLOMBIA>

@@ -1,0 +1,79 @@
+
+
+
+<!ELEMENT PRESIDENTS_TO_COLOMBIA (SIECLE_XIX, SIECLE_XX+, WAR_BROTHER_COLOMBIAN, INSERT_WHITE_SPACE) >
+<!ELEMENT SIECLE_XIX (WING_FEDERALIST+, WING_UNIONIST+, WING_SINISTRA+)>
+
+<!ATTLIST   SIECLE_XIX VISIBLE (TRUE | FALSE) "TRUE" >  
+
+ <!ATTLIST   SIECLE_XX LABEL (GiovannisFamily | EstefansFamily) "GiovannisFamily" >  
+ <!ATTLIST   SIECLE_XX SET ID #REQUIRED>
+<!-- If into this element is not present the attibute Required or implied parser
+    show a note where tell us  that one expected a chain litteral but can not was 
+    possibor to faind the  quotation marque of apertura.  -->
+
+<!ELEMENT WING_FEDERALIST (#PCDATA)>
+<!ATTLIST WING_FEDERALIST STATE CDATA #FIXED "Venezuela" >  
+<!-- In this element was placed an attribute fixed name state with value of america  -->
+<!ATTLIST WING_FEDERALIST DATE_BORN  CDATA "Unknow">
+<!-- In this element was placed an attribute by defolt name state with value of america  -->
+
+<!ELEMENT WING_UNIONIST (#PCDATA)>
+<!ATTLIST WING_UNIONIST STATE CDATA "Joint">
+<!ATTLIST WING_UNIONIST DATE_BORN CDATA "001">
+<!ELEMENT WING_SINISTRA EMPTY>
+<!ATTLIST WING_SINISTRA GIVEN_NAME CDATA #REQUIRED >
+<!ATTLIST WING_SINISTRA DATE_BORN CDATA #IMPLIED >
+
+<!ELEMENT SIECLE_XX (WING_FEDERALIST, WING_UNIONIST, WING_SINISTRA)>
+ 
+ 
+<!ATTLIST WING_FEDERALIST DATE_BORN  CDATA "000">
+ 
+<!ATTLIST WING_UNIONIST STATE CDATA "Joint"
+                                                 DATE_BORN CDATA "001">
+<!-- In this place ther a mixture of two attributes in one-->
+ 
+<!ATTLIST WING_SINISTRA GIVEN_NAME CDATA "undef">
+<!ATTLIST WING_SINISTRA DATE_BORN CDATA #FIXED "1981">
+
+<!ELEMENT WAR_BROTHER_COLOMBIAN (FIRST_WAR, TAG_PICTURE)>
+
+<!ATTLIST WAR_BROTHER_COLOMBIAN SET ID   #REQUIRED >
+<!ATTLIST WAR_BROTHER_COLOMBIAN CONFLICT_ELDER  IDREF  #IMPLIED  >
+<!ATTLIST WAR_BROTHER_COLOMBIAN  CONFLICT_HALF    IDREF   #IMPLIED  >
+  
+<!ELEMENT FIRST_WAR (#PCDATA) >
+<!ATTLIST FIRST_WAR CITY  NMTOKEN  #REQUIRED  >
+<!--  To put an element in this tag is require make it with 
+ abbrebiature if value have name compounds, NOTE: this element do not have
+  type character -->
+<!ATTLIST FIRST_WAR STATE-WRAPPED  NMTOKENS  #REQUIRED  >
+<!ATTLIST FIRST_WAR VISIBLE (TRUE | FALSE) "FALSE"> 
+<!-- In this element was placed an attribute foreload type enumerateds, yet not has been placed  -->
+<!--  note all atribute need its default value -->
+
+<!ENTITY EPEX SYSTEM " attribureAbroad.xml ">
+<!-- Between the sign of exclamation and the first letter E don`t is ammited whait space  -->
+<!--  This element link the root elementent with entity parameter abroad -->
+ 
+<!ELEMENT TAG_PICTURE EMPTY >
+<!ATTLIST TAG_PICTURE FIGURE ENTITY #REQUIRED >
+<!ENTITY chicken SYSTEM " b3.gif " NDATA gif >
+
+<!NOTATION gif SYSTEM "image/gif " >
+
+<!ElEMENT INSERT_WHITE_SPACE (WHITE_SPACE*)>
+<!ElEMENT WHITE_SPACE (#PCDATA)>
+<!ATTLIST WHITE_SPACE OPTION ID #IMPLIED > 
+
+<!ATTLIST WHITE_SPACE   space (default | preserve) "preserve" >
+
+
+<!--  Remember that a elelment that curri an attribute type id in the attlist
+        must put  the name of Element followed  of name of Id, key word Id and 
+        type of attribute implied or required -->
+<!ATTLIST WHITE_SPACE  space (default | preserve) "default" >
+
+
+

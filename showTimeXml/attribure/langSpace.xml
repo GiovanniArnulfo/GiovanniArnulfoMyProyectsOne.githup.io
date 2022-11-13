@@ -1,0 +1,23 @@
+  
+
+<SPELL>
+       <SPEECH COUNTRY="col" lang ="esp-Co" >
+	     Dear &G; Esta etiquta fue construida como una insinuacion, hint.
+	   </SPEECH >
+                    <!-- this element has a value to lang
+                           takeing into  accaunt the rule IANA three letters:esp. -->
+                  <SPEECH COUNTRY ="usa" lang ="en" > 
+                         This tag was built as a hint. ca&#241;adusales.
+        </SPEECH>
+        
+        <CREATELANG>
+           <!-- This poem tag has a lag created called gio -->
+              <POEM lang= "x-gio" > You can to take this ball as often as you like
+              </POEM>
+             <V lang = "it-x-Maria" > Neither our nor they </V>
+            <!-- Into the child V we put a value where the lang (it ) and the
+              country (Maria) is not specified in neither list two letter ISO nor IANA
+              yet we have the option of set a letter x follow a hyphen sign and 
+               put the name wanted -->
+        </CREATELANG>
+</SPELL>

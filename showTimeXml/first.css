@@ -1,0 +1,9 @@
+RECIPEhealthy{ display:block; text-align: center;  color:orange; font-weight:bold; font-size:20pt;
+}BREACKfast{ display:block; text-align: center;  color:blue ;font-size:16pt;
+}BEBERAGE{ display:block; text-align: left ;  color:green; font-size:16pt;
+}name{display:block; text-align: left; color:red ;font-size:16pt; font-style:italic; 
+}Ingredient{display:table; color:black ;font-size:16pt;
+}foodname{display:table-row; color:blue ;font-size:16pt;
+}quantite{display:table-cell; color:black ;font-size:16pt;
+}NOTE{display:table-caption; color:black ;font-size:16pt;
+}
