@@ -1,0 +1,42 @@
+<img src ="bottoomMenu.jpg" width= "100" height ="50"
+style="background-image:url(WsGreenFigureButtonMenuSquare/imageHome.gif)"
+<!--this are a hiper links
+
+ -->
+}
+.Menu{border-style:solid;
+right:80px;
+top:400px;
+color:red;
+background-color:black;
+width:100px;
+background-image:url("bottoomMenu.jpg");
+position:fixed;
+}
+
+
+
+<!--
+<div class="Menu">
+ <p style="font-size:15px">CONTRASTE</p>
+</div>
+-->
+html
+<button id="buttonFontSize">HELP VISUAL</button>
+ccs
+.bodyContrast.FontSize{font-size:25px
+}
+js
+var buttonFontSize=document.getElementById('buttonFontSize'),
+         bodyContrast=document.getElementById('bodyContrast'), 
+                contador=0;
+	function changefontSize(){
+	if (contador==0){
+                 bodyContrast.classList.add('FontSize');
+                 contador=1;
+                } else{
+                  bodyContrast.classList.Remove(FontSize);
+                 contador=0;
+    }
+}
+ buttonFontSize.addEventListener('click',changefontSize,true);
