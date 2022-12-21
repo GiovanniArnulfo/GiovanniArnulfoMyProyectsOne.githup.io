@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<FOOD_LIST>
+   <FOOD_ITEM TYPE="Colombian">
+                  <NAME>YUCA </NAME>
+                  <COST>OneHundred</COST>
+   </FOOD_ITEM>
+   
+   <FOOD_ITEM TYPE="Ecuadorien">
+                  <NAME>Maiz </NAME>
+                  <COST>TwoThousand  </COST>
+   </FOOD_ITEM>
+
+   <FOOD_ITEM TYPE="Guinean">
+                   <NAME>Roots</NAME>
+                   <COST>ThreeHundred </COST>
+   </FOOD_ITEM>
+</FOOD_LIST>

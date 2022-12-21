@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE FIGURE [
+<!ELEMENT FIGURE (CLUSTER) >
+<!ELEMENT CLUSTER (#PCDATA)>
+<!ATTLIST CLUSTER IMAGE ENTITIES #REQUIRED >
+<!-- Use to entitiES by cluster the pictures-->
+
+<!ENTITY  chicken1 SYSTEM "chick.jpg" NDATA jpg>
+<!ENTITY  cow2 SYSTEM "cow.jpg" NDATA jpg>
+
+<!-- with atribute ndata notation data, we are  making  reference to the  -->
+
+<!NOTATION jpg SYSTEM "image/jpg" >
+<!-- With notation Data the entities chicken1 and cow2 have been associated
+        with the jpg notation. The jpg notation is a declaration of the mime type image jpg -->
+
+
+<!-- NOTE chicken 1 and cow2 are reference to entity
+   already parse.one weited the name of one entity dont parse in Dtd  -->
+<!--   -->
+
+]>
+
+<FIGURE>
+   <CLUSTER IMAGE= "chicken1 cow2 " >Cluster of figure </CLUSTER>
+</FIGURE>

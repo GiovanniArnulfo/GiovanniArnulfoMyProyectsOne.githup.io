@@ -1,0 +1,51 @@
+<?xml version="1.0"   encoding="utf-8" ?>
+<?xml-stylesheet type="text/css"  href="first.css"?>
+<!--Exercise using Document Type Declaration DTD "Embeded": Is a guidline a framwork  about our doc xml discriminacion of each element -->
+
+<!DOCTYPE RECIPEhealthy[
+	<!ELEMENT RECIPEhealthy (Cookery, BREAKfast, BEBERAGE)>
+	<!ELEMENT Cookery (#PCDATA)>
+	<!ELEMENT BREAKfast (breakfast, BEBERAGE)>
+	<!ELEMENT breakfast (#PCDATA)>
+	<!ELEMENT BEBERAGE (name, FEATUREelder,Ingredient)>
+	<!ELEMENT name (#PCDATA)>
+                 <!ATTLIST name portions CDATA "0000"  costAverage CDATA "0000">
+	<!ELEMENT FEATUREelder (#PCDATA)>
+	<!ELEMENT Ingredient (foodname ,quantite,foodname ,quantite, NOTE ,foodname ,quantite,foodname ,quantite,foodname ,quantite,NOTE,NOTE)>
+	<!ELEMENT foodname (#PCDATA)>
+	<!ELEMENT quantite (#PCDATA)>
+	<!ELEMENT NOTE (#PCDATA)>
+	<!ATTLIST  NOTE numero CDATA "0000">
+]>
+
+<RECIPEhealthy>
+    <!--CDATA don´t can be put before the statement of the root (into level to root of document)or embeded, but in others posicion whether.-->
+    <!--the stay rule is applic to information that is into head tag -->
+    <!--the type "block" has the function of out the information look like paragraph -->
+    <!--the nod below coock look like as title-->
+  <Cookery>Coockin along with the brain</Cookery>
+   <BREAKfast>
+     <breakfast> Recipe by the Brackfast</breakfast>
+       <BEBERAGE>
+                 <name portions="3" costAverage="$200">Oat with chocolate</name>
+                 <FEATUREelder>Low in sugar,low in fat, hydratant drink</FEATUREelder>
+                     <Ingredient>
+                      <foodname>Water</foodname>  
+                      <quantite>2 tase </quantite>  
+                      <foodname >Oat </foodname>  
+                      <quantite>5 spoon-Soap </quantite>
+                      <NOTE numero ="1"> The oat is put in a glass with water by 12 hours</NOTE>     
+                      <foodname>Milk</foodname>        
+                      <quantite>1 tase </quantite>                
+                      <foodname>Panela</foodname>        
+                      <quantite>5 grams </quantite>                
+                      <foodname>Chocolate</foodname>        
+                      <quantite>1 1/2 one a half </quantite>     
+                      <NOTE numero ="2"> All ingredient in a jar, coocky until burn </NOTE>       
+                      <NOTE numero ="3"> Before to serve the beberage  batter with courage</NOTE>    
+                     </Ingredient>
+      </BEBERAGE>
+   </BREAKfast>
+ </RECIPEhealthy>	 
+
+    <![CDATA[This is a first attempt to write a doc in xml  ]]> 
