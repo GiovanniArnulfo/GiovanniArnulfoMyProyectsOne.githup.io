@@ -1,0 +1,208 @@
+/* xRay   begin */
+#imageFocusVertebrae{
+width:950px;
+height:650px;
+background:url("designWebpage/imageXray/vertebraeWithScrew.jpg") no-repeat;
+background-size:cover;
+/*position:relative;*/
+border:1px solid #00ff00;
+}
+#imageFocusVertebrae ul {
+margin:0px;
+padding:0px;
+list-style:none;
+}
+#imageFocusVertebrae a {
+position:absolute;
+text-indent:-1000em;
+}
+#imageFocusVertebrae a:hover {
+border:3px solid #ff0000;
+}
+#interVertebraeDisck a {
+top:725px;
+left:200px;
+width:90px;
+height:40px;
+}
+#lumbarVertebrae a {
+top:158%;
+left:19%;
+width:15%;
+height:15%;
+}
+#lung a {
+top:545px;
+right:165px;
+width:150px;
+height:150px;
+}
+#metalScrew1 a{
+top:825px;
+left:170px;
+width:150px;
+height:220px;
+}
+#metalScrew2 a{
+top:810px;
+right:5%;
+width:150px;
+height:190px;
+}
+#hip a{
+top:162%;
+right:10%;
+width:20%;
+height:10%;
+}
+/* xRay end */
+
+/* piramid Dinamic begin */
+
+#currenlyPdfAttribute{
+ position:absolute;
+ top:58%;
+ left:39%;
+ width:25%;
+ height:35%;
+ border:5px solid #000000;
+ z-index:2;
+ background-color:green;
+}
+
+.currenlyPdfAttribute{
+ padding:10px;
+ margin-bottom:20px;
+ position:absolute;
+ top:58%;
+ left:39%;
+ width:25%;
+ height:35%;
+ border:5px solid #000000;
+ z-index:2;
+ background-color:green;
+}
+.currenlyPdfAttribute.newBox{
+ padding:10px;
+ margin-bottom:20px;
+ position:absolute;
+ top:58%;
+ left:39%;
+ width:25%;
+ height:35%;
+ border:5px solid #000000;
+ z-index:3;
+ background-color:green;
+}
+
+#label1{
+ position:absolute;
+ top:58%;
+ left:59%;
+ width:25%;
+ height:35%;
+ border:5px solid #000000;
+ z-index:0;
+ background-color:blue;
+ padding:10px;
+ margin-bottom:20px;
+ }
+/* piramideDinamic end */
+
+ 
+.mother{
+position:fixed;
+top:10%;
+left:0% 
+}
+mother.buttonMail{ 
+position:fixed;
+left:0%;
+}
+mother.contrastButton{ 
+position:fixed;
+left:0%;
+}
+#contrastButton{
+width:20%;
+height:20%;
+padding:0px;
+}
+mother.buttonFontSize{
+position:fixed; 
+left:0%;
+}
+#buttonFontSize{
+width:20%;
+height:20%;
+padding:0px;
+}
+mother.buttonMenu{
+position:fixed;
+left:0%;
+}
+
+.bodyContrast{
+background-color:white; color: black; 
+}
+.bodyContrast.Natural{
+background-color:black; color: white;
+}
+.bodyContrast.FontSize{
+font-size:25px
+}
+
+h1 {color: red;
+      background-color: black;
+      text-align:center      
+}	
+p{ text-align:leftt;
+  }
+td{text-align:center;
+}
+ 
+/*cascad for Paragraph */
+
+.bigTable{ 
+border:solid; 
+border-color:red;
+ 
+} 
+.margine{
+border-style:inset; padding-left:15px; 
+padding-bottom:15px;
+border-width:10px;
+border-color: orange; 
+background-color:white
+ }
+.bolivar{
+border-width:5px 0px 20px 30px;
+border-style: groove none dotted ridge ;
+padding: 0%10% 0% 20%;
+ 
+border-color: black black red blue ;
+ 
+
+background-color:orange;
+font-style: italic;
+font-weight:bolder;
+font-size:20px;
+margin-bottom: 5px
+
+}
+.trigger{
+text-indent:10%
+}
+  
+.objectimage{
+border-style:solid;
+float:left;
+padding:20px;
+
+ }
+.objectpdf{
+border-style:double;
+float:left;
+padding:20px;
+margin-bottom:20px
+}
