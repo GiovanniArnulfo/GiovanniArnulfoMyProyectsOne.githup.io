@@ -32,7 +32,7 @@ var buttonFontSize=document.getElementById('buttonFontSize'),
  
 
 function functionCricketyChangeColor(){
-  document.getElementById("cricketyChangeColor").style.color="red";
+  document.getElementById("cricketyChangeColor").style.color="yellow";
 }
 
 
