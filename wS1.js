@@ -38,5 +38,7 @@ function functionCricketyChangeColor(){
 
 function myFunctionresizePosition(){
 document.getElementById("currenlyPdfAttribute").classList.add('newBox');
- 
+ container{
+  
+ }
 }
